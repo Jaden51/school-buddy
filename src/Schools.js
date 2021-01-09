@@ -5,15 +5,15 @@ function Schools() {
     <div>Schools listings
       <ul>
         <li>
-          <Link to="Schools/UBC"> University of British Columnbia</Link>
+          <Link to="Schools/University of British Columnbia"> University of British Columnbia</Link>
         </li>
         <li>
-          <Link to="Schools/UT">University of Toronto</Link>
+          <Link to="Schools/University of Toronto">University of Toronto</Link>
         </li>
         <li>
-          <Link to="Schools/UW">University of Waterloo</Link>
+          <Link to="Schools/University of Waterloo">University of Waterloo</Link>
         </li>
-        <li><Link to="Schools/Langara">Langara College</Link></li>
+        <li><Link to="Schools/Langara College">Langara College</Link></li>
       </ul>
     </div>
   )
