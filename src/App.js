@@ -1,5 +1,6 @@
 import Home from "./Home";
 import Schools from "./Schools";
+import SchoolPage from "./SchoolPage";
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -14,7 +15,10 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/schools">
+        <Route exact path="/schools/:schoolId">
+          <SchoolPage />
+        </Route>
+        <Route path="/schools">
           <Schools />
         </Route>
       </Switch>

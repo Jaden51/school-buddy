@@ -1,6 +1,6 @@
 function Schools() {
   return (
-    <div>Schools</div>
+    <div>Schools listings</div>
   )
 }
 
