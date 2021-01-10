@@ -1,6 +1,7 @@
 import Home from "./Home";
-import Schools from "./Schools";
-import SchoolPage from "./SchoolPage";
+import Schools from "./components/Schools";
+import SchoolPage from "./components/SchoolPage";
+import Search from "./components/Search";
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -22,6 +23,7 @@ function App() {
           <Schools />
         </Route>
       </Switch>
+      <Search />
     </Router>
   );
 }
