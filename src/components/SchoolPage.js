@@ -4,14 +4,23 @@ import {
   Switch,
   Route,
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 import TopicPage from "./TopicPage";
 import Header from './Header';
+import SchoolData from './schoolData';
 import styled from 'styled-components';
 
 function SchoolPage() {
   const { schoolId } = useParams();
   const { path, url } = useRouteMatch();
+
+  function getTwitter() {
+    for (var i = 0; i < SchoolData.length; i++) {
+      if (SchoolData[i].name === schoolId) {
+        return SchoolData[i].twitter;
+      }
+    }
+  }
 
   if (schoolId != null) {
     return (
@@ -40,14 +49,14 @@ function SchoolPage() {
                   </div>
                 </ul>
               </div>
+              <div className='col-1-2-right'>
+                <a className="twitter-timeline" data-width="95%" data-height="80vh" data-theme="dark" href={getTwitter()}>Tweets by {schoolId}</a>
+              </div>
             </Route>
             <Route path={`${path}/:topicId`}>
               <TopicPage />
             </Route>
           </Switch>
-        </div>
-        <div className='col-1-2-right'>
-          <a className="twitter-timeline" data-width="95%" data-height="80vh" data-theme="dark" href="https://twitter.com/UofT?ref_src=twsrc%5Etfw">Tweets by UofT</a>
         </div>
       </StyledSchoolPage >
     )
