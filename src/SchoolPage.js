@@ -1,14 +1,16 @@
-import {useParams,
+import {
+  useParams,
   useRouteMatch,
   Switch,
   Route,
-  Link} from 'react-router-dom'
+  Link
+} from 'react-router-dom'
+import TopicPage from "./TopicPage";
 
 function Schools() {
-  const {schoolId} = useParams();
+  const { schoolId } = useParams();
+  const { path, url } = useRouteMatch();
 
-  let { path, url } = useRouteMatch();
-  console.log(url)
   if (schoolId != null) {
     return (
       <div>
@@ -27,25 +29,13 @@ function Schools() {
               </li>
             </ul>
           </Route>
-
           <Route path={`${path}/:topicId`}>
-            <Topic />
+            <TopicPage />
           </Route>
-      </Switch>
-    </div>
+        </Switch>
+      </div>
     )
   }
-}
-
-function Topic() {
-  
-  const {schoolId, topicId} = useParams();
-  console.log(topicId)
-  return (
-    <div>
-      <h3>{topicId} at {schoolId}</h3>
-    </div>
-  );
 }
 
 export default Schools;
