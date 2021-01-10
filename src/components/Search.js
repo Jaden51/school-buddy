@@ -20,16 +20,6 @@ class Search extends Component {
             }
             return false;
         });
-        console.log(results)
-        // }).map(data => {
-        //     return (
-        //         <div>
-        //             <li>
-        //                 <Link to={`/Schools/${data.name}`}>{data.name}</Link>
-        //             </li>
-        //         </div>
-        //     )
-        // })
 
         return (
             <div>
