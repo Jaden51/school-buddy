@@ -18,11 +18,12 @@ function TopicPage() {
   return (
     <div>
       <h3>{`${topicId} at ${schoolId} is great!`}</h3>
-      {schoolTopic.map((result) => (
-        <p>
-          {result.commenter} - {result.comment}
-        </p>
-      ))}
+      {schoolTopic.length > 0 && 
+        schoolTopic.map((result) => (
+          <p key={'${result.commenter}_{result.comment}'}>
+            {result.commenter} - {result.comment}
+          </p>
+        ))}
     </div>
   );
 }

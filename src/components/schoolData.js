@@ -24,8 +24,8 @@ const SchoolData = [
     "name": "University of Waterloo",
     "school-life": [
       {
-        "commenter": "Joe Biden",
-        "comment": "PogChamp"
+        "commenter": "Dude Guy",
+        "comment": "Never heard of this before."
       },
       {
         "commenter": "Joe Biden",
@@ -38,14 +38,14 @@ const SchoolData = [
     ],
     "housing": [
       {
-        "commenter": "Joe Biden",
-        "comment": "PogChamp"
+        "commenter": "Henry",
+        "comment": "All my homies hate KW4Rent"
       }
     ],
     "academics": [
       {
-        "commenter": "Joe Biden",
-        "comment": "PogChamp"
+        "commenter": "Feridun",
+        "comment": "Very innovative university"
       }
     ]
   },
