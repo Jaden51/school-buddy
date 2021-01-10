@@ -17,8 +17,8 @@ function TopicPage() {
     <div>
       {/* <h3>{`${topicId} at ${schoolId} is great!`}</h3> */}
       {schoolTopic?.length > 0 &&
-        schoolTopic.map(({commenter, comment}) => (
-          <TopicPost key={`${commenter}_${comment}`} commenter={commenter} comment={comment} />
+        schoolTopic.map(({commenter, comment, timestamp}) => (
+          <TopicPost key={`${commenter}_${comment}`} commenter={commenter} comment={comment} timestamp={timestamp}/>
         ))}
     </div>
   );

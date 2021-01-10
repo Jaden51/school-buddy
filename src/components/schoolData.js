@@ -4,19 +4,22 @@ const SchoolData = [
     "school-life": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp"
+        "comment": "PogChamp",
+        "timestamp": 1610305125568
       }
     ],
     "housing": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp1"
+        "comment": "PogChamp1",
+        "timestamp": 1610305125568
       }
     ],
     "academics": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp2"
+        "comment": "PogChamp2",
+        "timestamp": 1610305125568
       }
     ]
   },
@@ -25,27 +28,32 @@ const SchoolData = [
     "school-life": [
       {
         "commenter": "Dude Guy",
-        "comment": "Never heard of this before."
+        "comment": "Never heard of this before.",
+        "timestamp": 1610305125568 
       },
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp3"
+        "comment": "PogChamp3",
+        "timestamp": 1610305125568
       },
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp4"
+        "comment": "PogChamp4",
+        "timestamp": 1610305125568
       }
     ],
     "housing": [
       {
         "commenter": "Henry",
-        "comment": "All my homies hate KW4Rent"
+        "comment": "All my homies hate KW4Rent",
+        "timestamp": 1610305125568 
       }
     ],
     "academics": [
       {
         "commenter": "Feridun",
-        "comment": "Very innovative university"
+        "comment": "Very innovative university",
+        "timestamp": 1610305125568 
       }
     ]
   },
@@ -54,19 +62,22 @@ const SchoolData = [
     "school-life": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp1"
+        "comment": "PogChamp1",
+        "timestamp": 1610305125568
       }
     ],
     "housing": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp2"
+        "comment": "PogChamp2",
+        "timestamp": 1610305125568
       }
     ],
     "academics": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp3"
+        "comment": "PogChamp3",
+        "timestamp": 1610305125568
       }
     ]
   },
@@ -75,19 +86,22 @@ const SchoolData = [
     "school-life": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp1"
+        "comment": "PogChamp1",
+        "timestamp": 1610305125568
       }
     ],
     "housing": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp2"
+        "comment": "PogChamp2",
+        "timestamp": 1610305125568
       }
     ],
     "academics": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp3"
+        "comment": "PogChamp3",
+        "timestamp": 1610305125568
       }
     ]
   },
@@ -96,19 +110,22 @@ const SchoolData = [
     "school-life": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp2"
+        "comment": "PogChamp2",
+        "timestamp": 1610305125568
       }
     ],
     "housing": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp6"
+        "comment": "PogChamp6",
+        "timestamp": 1610305125568
       }
     ],
     "academics": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp12"
+        "comment": "PogChamp12",
+        "timestamp": 1610305125568
       }
     ]
   },
@@ -117,19 +134,22 @@ const SchoolData = [
     "school-life": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp2312"
+        "comment": "PogChamp2312",
+        "timestamp": 1610305125568
       }
     ],
     "housing": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp312145"
+        "comment": "PogChamp312145",
+        "timestamp": 1610305125568
       }
     ],
     "academics": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp31241"
+        "comment": "PogChamp31241",
+        "timestamp": 1610305125568
       }
     ]
   },
@@ -138,19 +158,22 @@ const SchoolData = [
     "school-life": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp21"
+        "comment": "PogChamp21",
+        "timestamp": 1610305125568
       }
     ],
     "housing": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp2"
+        "comment": "PogChamp2",
+        "timestamp": 1610305125568
       }
     ],
     "academics": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp1"
+        "comment": "PogChamp1",
+        "timestamp": 1610305125568
       }
     ]
   },
@@ -159,19 +182,22 @@ const SchoolData = [
     "school-life": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp"
+        "comment": "PogChamp",
+        "timestamp": 1610305125568
       }
     ],
     "housing": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp"
+        "comment": "PogChamp",
+        "timestamp": 1610305125568
       }
     ],
     "academics": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp"
+        "comment": "PogChamp",
+        "timestamp": 1610305125568
       }
     ]
   },
@@ -180,19 +206,22 @@ const SchoolData = [
     "school-life": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp"
+        "comment": "PogChamp",
+        "timestamp": 1610305125568
       }
     ],
     "housing": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp"
+        "comment": "PogChamp",
+        "timestamp": 1610305125568
       }
     ],
     "academics": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp"
+        "comment": "PogChamp",
+        "timestamp": 1610305125568
       }
     ]
   },
@@ -201,19 +230,22 @@ const SchoolData = [
     "school-life": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp"
+        "comment": "PogChamp",
+        "timestamp": 1610305125568
       }
     ],
     "housing": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp"
+        "comment": "PogChamp",
+        "timestamp": 1610305125568
       }
     ],
     "academics": [
       {
         "commenter": "Joe Biden",
-        "comment": "PogChamp"
+        "comment": "PogChamp",
+        "timestamp": 1610305125568
       }
     ]
   }

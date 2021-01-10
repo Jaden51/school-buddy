@@ -1,11 +1,12 @@
 import { Card, Comment, Avatar } from "antd";
 
 
-function TopicPost({ commenter, comment }) {
+function TopicPost({ commenter, comment , timestamp}) {
   return (
     <Card className='topic-post'>
     <Comment
       author={commenter}
+      datetime={new Date(timestamp).toLocaleDateString("en-US")}
       content={
         <p>{comment}</p>
       }
