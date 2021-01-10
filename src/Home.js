@@ -1,6 +1,6 @@
 import { Layout, PageHeader } from "antd";
 import { Link } from "react-router-dom";
-import Search from "./Search";
+import Search from "./components/Search";
 
 const { Content } = Layout;
 
