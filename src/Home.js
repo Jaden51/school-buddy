@@ -1,4 +1,5 @@
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import Search from "./components/Search";
 
 function Home() {
   return (
@@ -6,6 +7,7 @@ function Home() {
       <Link to="/">Home</Link>
       <Link to="/Schools">Schools</Link>
       <Link to="/about">About</Link>
+      <Search />
     </div>
   )
 }
