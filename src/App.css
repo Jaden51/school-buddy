@@ -1,51 +1,200 @@
 @import '~antd/dist/antd.css';
+html{
+  scroll-behavior: smooth;
+}
 
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-
-.about-page{
+.about-page {
     /*empty for now */
 }
 
-.header{
-  font-size: 200px;
+.home-background {
+    width: 100%;
+    background: url("./assets/img/background.png");
+    background-size: cover;
+}
+
+.title {
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 5rem;
+    text-align: center;
+    justify-content: center;
+    color: #F1F6F9;
+    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 19.5rem;
+}
+
+.header {
+    font-size: 200px;
+}
+
+.search {
+    align-self: center;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F1F6F9;
+    outline: none;
+
+
+}
+
+.searchBarContainer {
+    background: #F1F6F9;
+    border-radius: 108px;
+    position: relative;
+    margin:auto;
+    width:50%;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.left-align{
+  text-align: left;
+}
+
+.arrow-container {
+  width: 50px;
+  /* cubic-bezier-easing = sine / mehr Beispiele: https://easings.net/ */
+  animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  cursor: pointer;
+  margin: auto;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  height: 45px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #F1F6F9;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid #F1F6F9;
+  border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+  }
+  40% {
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+  }
+  60% {
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px);
+  }
+}
+
+.aboutus-background{
+  width: 100%;
+  background: url("./assets/img/aboutusbackground.png");
+  background-size: contain;
+}
+.empty {
+  margin: 10rem;
+}
+
+#aboutus-title{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  margin-left: 28rem;
+  margin-top: 10rem;
+}
+#aboutus-paragraph{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 40rem;
+  margin-right: 3rem  ;
+  color: #F1F6F9;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  margin: auto;
+
+}
+
+#icons {
+  position: relative;
+  margin-top: 12.5rem;
+  color: #F1F6F9;
+}
+
+#gitHub{
+  color: #F1F6F9;
 }
 
 .page-container {
