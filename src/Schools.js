@@ -5,7 +5,7 @@ function Schools() {
     <div>Schools listings
       <ul>
         <li>
-          <Link to="Schools/University of British Columnbia"> University of British Columnbia</Link>
+          <Link to="Schools/University of British Columbia"> University of British Columnbia</Link>
         </li>
         <li>
           <Link to="Schools/University of Toronto">University of Toronto</Link>

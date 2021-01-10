@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom'
 import TopicPage from "./TopicPage";
 
-function Schools() {
+function SchoolPage() {
   const { schoolId } = useParams();
   const { path, url } = useRouteMatch();
 
@@ -38,4 +38,4 @@ function Schools() {
   }
 }
 
-export default Schools;
+export default SchoolPage;
