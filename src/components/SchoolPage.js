@@ -33,17 +33,17 @@ function SchoolPage() {
               <div className='col-1-2-left'>
                 <ul>
                   <div>
-                    <Link to={`${url}/Student Life`}>
-                      <button className='topic-btn'>Student Life</button>
+                    <Link to={`${url}/school-life`}>
+                      <button className='topic-btn'>School Life</button>
                     </Link>
                   </div>
                   <div>
-                    <Link to={`${url}/Housing`}>
+                    <Link to={`${url}/housing`}>
                       <button className='topic-btn'>Housing</button>
                     </Link>
                   </div>
                   <div>
-                    <Link to={`${url}/Academics`}>
+                    <Link to={`${url}/academics`}>
                       <button className='topic-btn'>Academics</button>
                     </Link>
                   </div>
