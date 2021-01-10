@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import SchoolData from './schoolData';
+import { List } from "antd";
+import { Input } from 'antd';
 import { Link } from "react-router-dom";
 
 class Search extends Component {
@@ -12,31 +14,30 @@ class Search extends Component {
     render() {
         const { universityQuery } = this.state;
 
-        const Results = SchoolData.filter(data => {
-            if (data.name.toLowerCase().includes(universityQuery.toLowerCase())) {
-                return data;
+        const results = SchoolData.filter(data => {
+            if (universityQuery.length > 0 && data.name.toLowerCase().includes(universityQuery.toLowerCase())) {
+                return true;
             }
-            else if (universityQuery === '') {
-                return data;
-            }
-        }).map(data => {
-            return (
-                <div>
-                    <li>
-                        <Link to={`/Schools/${data.name}`}>{data.name}</Link>
-                    </li>
-                </div>
-            )
-        })
+            return false;
+        });
+
         return (
             <div>
-                <input
+                <Input
                     onChange={this.updateUniversityQuery}
-                    onKeyPress={this.handleKeyPress}
                     placeholder='Search for a university...'
                     className='search'>
-                </input>
-                {Results}
+                </Input>
+                { results.length > 0 && (
+                    <List bordered>
+                        {results.map((result) => (
+                            <List.Item>
+                                <Link to={`/Schools/${result.name}`}>{result.name}</Link>
+                            </List.Item>
+                        ))}
+
+                    </List>
+                )}
             </div>
         )
     }
