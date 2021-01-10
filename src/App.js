@@ -1,6 +1,7 @@
 import Home from "./Home";
 import Schools from "./Schools";
 import SchoolPage from "./SchoolPage";
+import AboutPage from "./AboutPage";
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route exact path="/schools">
           <Schools />
+        </Route>
+        <Route exact path="/about">
+          <AboutPage/>
         </Route>
       </Switch>
     </Router>
