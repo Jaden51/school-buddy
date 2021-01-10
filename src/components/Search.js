@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import SchoolData from './schoolData';
+import { Link } from "react-router-dom";
 
 class Search extends Component {
     state = { universityQuery: '' }
@@ -7,20 +9,34 @@ class Search extends Component {
         this.setState({ universityQuery: event.target.value });
     }
 
-    handleKeyPress = event => {
-        if (event.key === 'Enter') {
-
-        }
-    }
-    
     render() {
+        const { universityQuery } = this.state;
+
+        const Results = SchoolData.filter(data => {
+            if (data.name.toLowerCase().includes(universityQuery.toLowerCase())) {
+                return data;
+            }
+            else if (universityQuery === '') {
+                return data;
+            }
+        }).map(data => {
+            return (
+                <div>
+                    <li>
+                        <Link to={`/Schools/${data.name}`}>{data.name}</Link>
+                    </li>
+                </div>
+            )
+        })
         return (
             <div>
                 <input
                     onChange={this.updateUniversityQuery}
                     onKeyPress={this.handleKeyPress}
                     placeholder='Search for a university...'
-                    className='search'></input>
+                    className='search'>
+                </input>
+                {Results}
             </div>
         )
     }
