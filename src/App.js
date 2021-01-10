@@ -1,6 +1,6 @@
 import Home from "./Home";
-import Schools from "./Schools";
-import SchoolPage from "./SchoolPage";
+import Schools from "./components/Schools";
+import SchoolPage from "./components/SchoolPage";
 import AboutPage from "./AboutPage";
 import './App.css';
 import {
