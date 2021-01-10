@@ -6,6 +6,7 @@ import {
   Link
 } from 'react-router-dom'
 import TopicPage from "./TopicPage";
+import Header from './Header';
 
 function SchoolPage() {
   const { schoolId } = useParams();
@@ -14,18 +15,19 @@ function SchoolPage() {
   if (schoolId != null) {
     return (
       <div>
+        <Header />
         <Switch>
           <Route exact path={path}>
             <h3>School page for {schoolId}</h3>
             <ul>
               <li>
-                <Link to={`${url}/Student Life`}>Student Life</Link>
+                <Link to={`${url}/school-life`}>School Life</Link>
               </li>
               <li>
-                <Link to={`${url}/Housing`}>Housing</Link>
+                <Link to={`${url}/housing`}>Housing</Link>
               </li>
               <li>
-                <Link to={`${url}/Academics`}>Academics</Link>
+                <Link to={`${url}/academics`}>Academics</Link>
               </li>
             </ul>
           </Route>
