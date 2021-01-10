@@ -6,6 +6,7 @@ import {
   Link
 } from 'react-router-dom'
 import TopicPage from "./TopicPage";
+import Header from './Header';
 
 function SchoolPage() {
   const { schoolId } = useParams();
@@ -14,6 +15,7 @@ function SchoolPage() {
   if (schoolId != null) {
     return (
       <div>
+        <Header />
         <Switch>
           <Route exact path={path}>
             <h3>School page for {schoolId}</h3>
