@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 import TopicPage from "./TopicPage";
 import Header from './Header';
+import styled from 'styled-components';
 
 function SchoolPage() {
   const { schoolId } = useParams();
@@ -14,30 +15,78 @@ function SchoolPage() {
 
   if (schoolId != null) {
     return (
-      <div>
-        <Header />
-        <Switch>
-          <Route exact path={path}>
-            <h3>School page for {schoolId}</h3>
-            <ul>
-              <li>
-                <Link to={`${url}/Student Life`}>Student Life</Link>
-              </li>
-              <li>
-                <Link to={`${url}/Housing`}>Housing</Link>
-              </li>
-              <li>
-                <Link to={`${url}/Academics`}>Academics</Link>
-              </li>
-            </ul>
-          </Route>
-          <Route path={`${path}/:topicId`}>
-            <TopicPage />
-          </Route>
-        </Switch>
-      </div>
+      <StyledSchoolPage>
+        <div>
+          <Header />
+          <Switch>
+            <Route exact path={path}>
+              <div className='header'>{schoolId}</div>
+              <div className='col-1-2-left'>
+                <ul>
+                  <div>
+                    <Link to={`${url}/Student Life`}>
+                      <button className='topic-btn'>Student Life</button>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link to={`${url}/Housing`}>
+                      <button className='topic-btn'>Housing</button>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link to={`${url}/Academics`}>
+                      <button className='topic-btn'>Academics</button>
+                    </Link>
+                  </div>
+                </ul>
+              </div>
+            </Route>
+            <Route path={`${path}/:topicId`}>
+              <TopicPage />
+            </Route>
+          </Switch>
+        </div>
+        <div className='col-1-2-right'>
+          <a className="twitter-timeline" data-width="95%" data-height="80vh" data-theme="dark" href="https://twitter.com/UofT?ref_src=twsrc%5Etfw">Tweets by UofT</a>
+        </div>
+      </StyledSchoolPage >
     )
   }
 }
 
 export default SchoolPage;
+
+const StyledSchoolPage = styled.div`
+  .header {
+    height: 75px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 95%;
+    background: #394867;
+    border-radius: 49px;
+    font-size: 50px;
+    color: white;
+    vertical-align: middle;
+    padding-left: 20px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+  }
+  .topic-btn {
+    width: 95%;
+    margin: 0 0 20px 0;
+    height: 119px;
+    background: #394867;
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    font-size: 50px;
+    color: white;
+  }
+  .col-1-2-left {
+    float: left;
+    width: 50%;
+  }
+  .col-1-2-right {
+    float: right;
+    width: 50%;
+  }
+`;
