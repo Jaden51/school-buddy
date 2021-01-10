@@ -14,7 +14,9 @@ function TopicPage() {
   const comments = filteredSchools.length > 0 ? filteredSchools[0][topicId] : [];
 
   return (
-    <CommentsFeed comments={comments} />
+    <div className="page-container">
+      <CommentsFeed comments={comments} />
+    </div>
   );
 }
 
