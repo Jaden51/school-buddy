@@ -47,3 +47,11 @@
 .header{
   font-size: 200px;
 }
+
+.page-container {
+  padding: 16px 24px;
+}
+
+.topic-post {
+  margin-bottom: 12px;
+}

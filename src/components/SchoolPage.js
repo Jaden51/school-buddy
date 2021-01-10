@@ -16,6 +16,7 @@ function SchoolPage() {
     return (
       <div>
         <Header />
+        <div className="page-container">
         <Switch>
           <Route exact path={path}>
             <h3>School page for {schoolId}</h3>
@@ -35,6 +36,7 @@ function SchoolPage() {
             <TopicPage />
           </Route>
         </Switch>
+        </div>
       </div>
     )
   }

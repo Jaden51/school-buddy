@@ -1,28 +1,24 @@
-import { List } from 'antd/lib/form/Form';
 import {
   useParams,
 } from 'react-router-dom'
 import schoolData from "./schoolData"
+import TopicPost from "./TopicPost";
 
 function TopicPage() {
   const { schoolId, topicId } = useParams();
-  let school = null
-  for (let i = 0; i < schoolData.length; i++) {
-    if (schoolData[i].name == schoolId) {
-      school = schoolData[i]
-    }
-  }
 
-  let schoolTopic = school[topicId]
-  
+  const filteredSchools = schoolData.filter((item) => {
+    return item.name === schoolId
+  });
+
+  let schoolTopic = filteredSchools.length > 0 ? filteredSchools[0][topicId] : [];
+
   return (
     <div>
-      <h3>{`${topicId} at ${schoolId} is great!`}</h3>
-      {schoolTopic.length > 0 && 
-        schoolTopic.map((result) => (
-          <p key={'${result.commenter}_{result.comment}'}>
-            {result.commenter} - {result.comment}
-          </p>
+      {/* <h3>{`${topicId} at ${schoolId} is great!`}</h3> */}
+      {schoolTopic?.length > 0 &&
+        schoolTopic.map(({commenter, comment}) => (
+          <TopicPost key={`${commenter}_${comment}`} commenter={commenter} comment={comment} />
         ))}
     </div>
   );
