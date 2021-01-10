@@ -1,0 +1,50 @@
+{
+  "schools": [
+    {
+      "university-of-british-columbia": {
+        "name": "University of British Columbia",
+        "school-life": [
+          {
+            "commenter": "Joe Biden",
+            "comment": "PogChamp"
+          }
+        ],
+        "housing": [
+          {
+            "commenter": "Joe Biden",
+            "comment": "PogChamp"
+          }
+        ],
+        "academics": [
+          {
+            "commenter": "Joe Biden",
+            "comment": "PogChamp"
+          }
+        ]
+      }
+    },
+    {
+      "university-of-waterloo": {
+        "name": "University of Waterloo",
+        "school-life": [
+          {
+            "commenter": "Joe Biden",
+            "comment": "PogChamp"
+          }
+        ],
+        "housing": [
+          {
+            "commenter": "Joe Biden",
+            "comment": "PogChamp"
+          }
+        ],
+        "academics": [
+          {
+            "commenter": "Joe Biden",
+            "comment": "PogChamp"
+          }
+        ]
+      }
+    }
+  ]
+}
