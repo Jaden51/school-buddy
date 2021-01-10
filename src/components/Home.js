@@ -1,5 +1,5 @@
 import { Layout, PageHeader } from "antd";
-import { Link } from "react-router-dom";
+import Header from "./Header";
 import Search from "./Search";
 
 const { Content } = Layout;
@@ -7,10 +7,7 @@ const { Content } = Layout;
 function Home() {
   return (
     <Layout>
-      <PageHeader title="SchoolBuddy" subTitle="Find your school" extra={[
-        <Link key="1" to="/">Home</Link>,
-        <Link key="2" to="/Schools">Schools</Link>,
-      ]} />
+      <Header />
       <Content>
 
       </Content>
