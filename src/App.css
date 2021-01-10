@@ -1,5 +1,7 @@
 @import '~antd/dist/antd.css';
 
+
+
 .App {
   text-align: center;
 }
@@ -43,4 +45,9 @@
 
 .header{
   font-size: 200px;
+}
+
+
+.aboutUsBkg{
+  width: 100%;
 }

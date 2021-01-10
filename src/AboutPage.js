@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './App.css'
+import bkg from "./assets/img/aboutus.png";
 
 class AboutPage extends Component {
     render() {
@@ -7,7 +8,9 @@ class AboutPage extends Component {
 
             // <StyledAboutPage>
                 <div className="about_page">
-                    <h2 className="header">Jaden gay</h2>
+                    <img className="aboutUsBkg" src={bkg} alt="background">
+
+                    </img>
 
                 </div>
             /* </StyledAboutPage> */
